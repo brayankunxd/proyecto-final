@@ -1,0 +1,60 @@
+<Project>
+  <Name>Empresa</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Empleado</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Empleado</Name>
+        <Access>Public</Access>
+        <Location left="387" top="268" />
+        <Size width="240" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int _intNumero</Member>
+        <Member type="Field">string _strNombre</Member>
+        <Member type="Field">string _strSexo</Member>
+        <Member type="Field">DateTime _dtmFechaNacimiento</Member>
+        <Member type="Field">string _strDepartamento</Member>
+        <Member type="Property">public int Numero { get; set; }</Member>
+        <Member type="Property">public string Nombre { get; set; }</Member>
+        <Member type="Property">public string Sexo { get; set; }</Member>
+        <Member type="Property">public DateTime FechaNacimineto { get; set; }</Member>
+        <Member type="Property">public string Departamentos { get; set; }</Member>
+        <Member type="Method">public stirng MostrarDatos()</Member>
+        <Member type="Method">public bool Equals(Empelado otroEmpleado)</Member>
+        <Member type="Method">public int COmpareTo(Empleado otroEmpleado)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IEquatable&lt;Empleado&gt;</Name>
+        <Access>Public</Access>
+        <Location left="277" top="96" />
+        <Size width="162" height="107" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">bool Equals()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IComparable&lt;Empleado&gt;</Name>
+        <Access>Public</Access>
+        <Location left="508" top="96" />
+        <Size width="162" height="107" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">int CompareTo()</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
